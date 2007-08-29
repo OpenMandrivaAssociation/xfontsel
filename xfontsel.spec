@@ -36,6 +36,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xfontsel
 %{_datadir}/X11/app-defaults/XFontSel
-%{_mandir}/man1/xfontsel.1*.bz2
+%{_mandir}/man1/xfontsel.1*
 
 
