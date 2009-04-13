@@ -20,10 +20,7 @@ Description ("XLFD") full name for a font.
 %setup -q -n %{name}-%{version}
 
 %build
-autoreconf -ifs
-%configure	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
-
+%configure2_5x
 %make
 
 %install
