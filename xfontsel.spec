@@ -1,9 +1,9 @@
 Summary:	Point and click selection of X11 font names
 Name:		xfontsel
-Version:	1.0.6
-Release:	3
+Version:	1.1.0
+Release:	1
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 
 BuildRequires:	pkgconfig(xt)
@@ -19,14 +19,13 @@ Description ("XLFD") full name for a font.
 %setup -q
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xfontsel
 %{_datadir}/X11/app-defaults/XFontSel
 %{_mandir}/man1/xfontsel.1*
-
