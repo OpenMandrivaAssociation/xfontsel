@@ -9,6 +9,7 @@ License:	MIT
 BuildRequires:	pkgconfig(xt)
 BuildRequires:	pkgconfig(xaw7)
 BuildRequires:	pkgconfig(xorg-macros)
+BuildRequires:	gettext
 
 %description
 The xfontsel application provides a simple way to display the fonts known to
@@ -16,7 +17,7 @@ your X server, examine samples of each, and retrieve the X Logical Font
 Description ("XLFD") full name for a font.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
