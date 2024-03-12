@@ -1,7 +1,7 @@
 Summary:	Point and click selection of X11 font names
 Name:		xfontsel
-Version:	1.1.0
-Release:	2
+Version:	1.1.1
+Release:	1
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
